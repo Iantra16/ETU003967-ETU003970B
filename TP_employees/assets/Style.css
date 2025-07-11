@@ -1,0 +1,342 @@
+
+.menu-fixe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 5px;
+    z-index: 1000;
+    background: #2cb5a0;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.menu-fixe:hover {
+  transform: translateY(10px);
+}
+.navbar-brand:hover , .nav-link:hover{
+  transform: translatex(2px);
+  color: #70c52a;
+}
+
+body {
+    
+    background-color: #e8e8e8;
+    /* display: grid; */
+    padding-top: 5rem;
+    min-height: 100%;
+
+}
+
+main {
+    min-height: 700px;
+    display: grid;
+    align-content: center;
+}
+
+
+footer {
+    display: grid;
+    max-height: 6rem;
+    clear: both;
+}
+
+.search{
+    background-color: white;
+    border-radius: 10%;
+    /* padding: 10px 10px; */
+}
+
+.title{
+    text-align: center;
+    /* color: white; */
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+table{
+    width: 80% ;
+    margin: auto;
+}
+
+
+/* .search{
+    align-items: center;
+} */
+/* from */
+.form {
+    justify-content: center;
+  --bg-light: #efefef;
+  --bg-dark: #707070;
+  --clr: #58bc82;
+  --clr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  /* padding: auto; */
+}
+
+.form .input-span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form input[type="number"] {
+  /* -moz-appearance: textfield; */
+  height: 2.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.form input {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  outline: 2px solid var(--bg-dark);
+}
+
+.form input:focus {
+  outline: 2px solid var(--clr);
+}
+
+.label {
+  align-self: flex-start;
+  color: #58bc82;
+  font-weight: 600;
+}
+
+.form .submit {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color:  white;
+  color: var(--clr);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form .submit:hover {
+  /* background-color: var(--clr); */
+  background-color: #58bc82;
+  color: white;
+}
+
+.age {
+  width: 100%;
+  text-decoration: none;
+  color: var(--bg-dark);
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.age a {
+  color: var(--clr);
+}
+
+.link{
+    text-decoration: none;
+    /* color: var(--bg-dark); */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.link:hover{
+    color: var(--clr);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+
+/* title */
+
+.tab{
+    max-width: 70%; 
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-color: #2cb5a0;
+}
+
+table th {
+    background-color: #e0f2f7;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #a7d9eb;
+}
+
+table th:nth-child(1) {
+    text-align: left;
+}
+
+table th:nth-child(n+2) {
+    text-align: right;
+}
+
+td {
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+table td:nth-child(n+2) {
+    text-align: right;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #fcfcfc; 
+}
+
+table tbody tr:hover {
+    background-color: #f0f0f0; 
+}
+
+.section-title {
+    font-size: 2em; 
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 20px; 
+    font-weight: normal; 
+}
+
+.change {
+  width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.btn{
+    margin-bottom: 20px;
+    text-transform: uppercase ;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: white;
+    color: hsl(261deg 80% 48%);
+    text-decoration: none;
+    border-radius: 15px;
+    border-color: hsl(261deg 80% 48%);
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.btn:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+/* back */
+.back {
+  float: right;
+  background-color: #ffffff00;
+  color: #3654ff;
+  width: 8.5em;
+  height: 2.9em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+  align-content: center;
+}
+
+.back:hover {
+  background-color: #3654ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.back svg {
+  width: 1.6em;
+  margin-top: 0.2em;
+  margin-left: 0.8em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.back:hover svg {
+  transform: translateX(-5px);
+}
+.b-text{
+  margin: 0 1.5em;
+}
+
+
+
+/* fiche */
+.employee-card {
+        font-family: 'Arial', sans-serif;
+        /* Police de caractères lisible */
+        background-color: #f9f9f9;
+        /* Arrière-plan léger */
+        border: 1px solid #ddd;
+        /* Bordure discrète */
+        border-radius: 8px;
+        /* Coins légèrement arrondis */
+        padding: 20px;
+        /* Espacement intérieur */
+        margin: 15px 0;
+        /* Marge au-dessus et en dessous */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Légère ombre pour la profondeur */
+        line-height: 1.6;
+        /* Hauteur de ligne pour une meilleure lisibilité */
+        color: #333;
+        /* Couleur du texte principal */
+    }
+
+    .employee-card p {
+        margin-bottom: 8px;
+        /* Espacement entre chaque ligne d'information */
+        font-size: 1rem;
+        /* Taille de police par défaut */
+    }
+
+    .employee-card strong {
+        color: #0056b3;
+        /* Couleur pour les étiquettes (ex: "Birth", "Hiring") */
+        font-weight: bold;
+        /* S'assurer que l'étiquette est en gras */
+        margin-right: 5px;
+        /* Petit espace après l'étiquette */
+    }
+
+
+    .employee-card .age-info {
+        font-weight: bold;
+        color: #d9534f;
+        /* Une couleur qui attire l'attention, comme le rouge */
+        font-size: 1.1rem;
+        /* Un peu plus grand que le texte normal */
+    }

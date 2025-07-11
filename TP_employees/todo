@@ -1,0 +1,226 @@
+maka donnee         ok
+micree compte binome + essai    ok
+1:
+Function maka dept rht      ok
+Function maka dept + manager    ok
+Function maka liste employees an'le dept    ok
+
+2:
+Function maka fiche le employee tsirairay       ok
+Function maka fiche le employee tsirairay + titre + salaire     ok
+Formulaire de recherche
+    |_dept + nom employee + age min + age max   ok
+    |_traitement : traiteSearch 
+Function maka le zvt atao recherche  ok
+Affichage 20 par 20 + suivant / apres ok
+Pagination ok
+
+
+AVEC VUE:
+. employees -> dept_manager -> deparetements ok
+. employees -> dept_emp -> deparetements ok 
+.current
+        |_manager ok
+        |_employer ok
+
+.fiche emplooyes ok
+.formulaire ok
+.liste emploi et salaire moyenne avec nbre employee (homme /femme) ok
+
+3:
+nbre emp / dept ok
+page affiche emploi , salaire moyenne, nbre employees (homme ,femme) ok
+fiche.php : emploi le plus long ok
+
+4:
+fiche.php 
+    |_btn 1: "changer de departement" => formulaire (choix de dept, date de debut) ok
+        affiche le dept actuel + date debut dans ce dept ok
+        liste : tss dept actuel ok
+            date Debut actuel ok
+            message d'erreur si new date debut < date actuel dept actuel ok
+            verifie si ajouter le new dept  ok
+
+    |_btn 2: "devenir manager" => formulaire (date debut) ok
+        affiche le manager du dept ou se trouve l'employe ok
+        date debut du manager actuel ok
+        message d'erreur si new date debut < date actuel dept actuel ok
+        verifie si ajouter le new manager ok
+
+
+Model:(Page.php?model=...)
+accueil ok
+liste ok
+fiche ok
+change ok
+devenirMng ok
+
+
+
+
+////////////////////////////////////////////testte///////////////////////////////////////////////////
+Todo List - Examen Web en Binôme (PHP, MySQL, GitHub)
+
+Pré-requis et Initialisation (À faire ensemble ou P1/P2 selon qui est le plus à l'aise)
+
+    [ ] Télécharger les données de la base de données depuis 
+
+    https://github.com/datacharmer/test_db (P1) 
+
+[ ] Lire le fichier 
+
+Readme pour installer la base de données (P1 & P2) 
+
+[ ] Comprendre la structure de la base de données 
+
+employees à partir de images/employees.png (P1 & P2) 
+
+[ ] Créer le dépôt GitHub public (P1)
+
+[ ] Cloner le dépôt GitHub (P1 & P2)
+
+[ ] Configurer l'environnement local (XAMPP/WAMP/MAMP) (P1 & P2)
+
+[ ] Créer la base de données si nécessaire et importer les données (P1)
+
+[ ] Mettre en place la connexion à la base de données (fichier config.php par exemple) (P1)
+
+[ ] Mettre en place un dossier de rangement des répertoires de code (P1 & P2) 
+
+[ ] Installer et configurer Bootstrap pour l'intégration visuelle (P2) 
+
+Version 1 : Liste des Départements et Employés (Focus sur la lecture des données)
+
+    [ ] (P1) Branche feature/v1-departments{
+
+        [ ] Créer une page PHP pour afficher la liste des départements. 
+
+[ ] Rajouter une colonne affichant le nom du manager actuel de chaque département. 
+
+[ ] Mettre un lien sur chaque ligne de département pour diriger vers une autre page affichant les employés de ce département. 
+}
+[ ] (P2) Branche feature/v1-employees-by-dept{
+
+    [ ] Créer une page PHP pour afficher la liste des employés d'un département donné (qui sera appelée par le lien de P1). 
+
+[ ] Utiliser Bootstrap pour la mise en forme de ces deux pages. 
+}
+    [ ] (P1 & P2) Revue et Fusion
+
+        [ ] P1 crée une Pull Request pour feature/v1-departments vers main.
+
+        [ ] P2 revoit et approuve la PR de P1.
+
+        [ ] P2 crée une Pull Request pour feature/v1-employees-by-dept vers main.
+
+        [ ] P1 revoit et approuve la PR de P2.
+
+        [ ] Fusionner les branches dans main.
+
+Version 2 : Fiche Employé, Historique et Recherche (Focus sur le détail et la navigation)
+
+    [ ] (P1) Branche feature/v2-employee-profile
+
+        [ ] Créer une page PHP pour afficher la fiche détaillée d'un employé lorsqu'on clique sur son nom. 
+
+[ ] Dans la fiche, rajouter l'historique de salaire de l'employé. 
+
+[ ] Dans la fiche, rajouter l'historique des emplois occupés par l'employé. 
+
+[ ] (P2) Branche feature/v2-search-pagination
+
+    [ ] Créer un formulaire de recherche (département, nom employé, âge min et max). 
+
+[ ] Implémenter la logique de recherche PHP/MySQL basée sur ce formulaire.
+
+[ ] Afficher seulement 20 lignes de résultats par page (utiliser 
+
+LIMIT en SQL). 
+
+[ ] Créer un lien "Suivant" pour afficher les 20 prochaines lignes. 
+
+[ ] Créer un lien "Précédent" pour afficher les 20 lignes précédentes. 
+
+    [ ] (P1 & P2) Revue et Fusion
+
+        [ ] P1 crée une PR, P2 revoit et approuve.
+
+        [ ] P2 crée une PR, P1 revoit et approuve.
+
+        [ ] Fusionner dans main.
+
+Version 3 : Statistiques et Détails Avancés (Focus sur l'agrégation de données)
+
+    [ ] (P1) Branche feature/v3-dept-stats
+
+        [ ] Sur la liste des départements (page V1), ajouter une colonne affichant le nombre d'employés par département. 
+
+[ ] (P2) Branche feature/v3-job-stats
+
+    [ ] Créer une nouvelle page pour afficher un tableau contenant : 
+
+    Le nombre d'employés (hommes et femmes) pour chaque emploi. 
+
+Le salaire moyen pour chaque emploi. 
+
+[ ] (P1) Branche feature/v3-employee-longest-job
+
+    [ ] Dans la fiche employé (page V2), afficher l'emploi le plus long occupé par l'employé (en terme de durée). 
+
+    [ ] (P1 & P2) Revue et Fusion
+
+        [ ] P1 crée des PRs pour ses fonctionnalités, P2 revoit et approuve.
+
+        [ ] P2 crée une PR pour sa fonctionnalité, P1 revoit et approuve.
+
+        [ ] Fusionner dans main.
+
+Version 4 : Modification des Données (Focus sur les formulaires de mise à jour)
+
+    [ ] (P2) Branche feature/v4-change-department
+
+        [ ] Dans la fiche de l'employé (page V2), ajouter un bouton "Changer de département". 
+
+[ ] Ce bouton ouvre un formulaire avec le choix du nouveau département et la date de début. 
+
+[ ] Le formulaire doit afficher le département actuel de l'employé et sa date de début. 
+
+[ ] Le champ de sélection du nouveau département ne doit pas inclure le département actuel. 
+
+[ ] Implémenter la logique PHP pour mettre à jour le département de l'employé dans la BDD.
+
+[ ] Vérifier que le nouveau département s'affiche correctement après l'ajout. 
+
+[ ] Afficher un message d'erreur si la date de début du nouveau département est antérieure à la date de début de l'actuel. 
+
+[ ] (P1) Branche feature/v4-become-manager
+
+    [ ] Dans la fiche de l'employé (page V2), ajouter un bouton "Devenir Manager". 
+
+[ ] Ce bouton ouvre un formulaire avec un champ pour la date de début. 
+
+[ ] Le formulaire doit afficher le nom du manager en cours (s'il y en a un). 
+
+[ ] Implémenter la logique PHP pour faire de l'employé le manager de son département actuel.
+
+[ ] Vérifier dans la liste des départements que l'employé est bien le nouveau manager. 
+
+[ ] Afficher un message d'erreur si la date de début du nouveau manager est antérieure à la date de début de l'actuel. 
+
+    [ ] (P1 & P2) Revue et Fusion
+
+        [ ] P2 crée une PR, P1 revoit et approuve.
+
+        [ ] P1 crée une PR, P2 revoit et approuve.
+
+        [ ] Fusionner dans main.
+
+Tests et Préparation Finale (À faire ensemble)
+
+    [ ] Tester toutes les fonctionnalités du site.
+
+    [ ] Vérifier la bonne intégration entre les modules.
+
+    [ ] S'assurer que le code est propre et commenté.
+
+    [ ] Préparer la démonstration pour l'examen.
